@@ -1,0 +1,71 @@
+Project Details along with functional details and development details : 
+----------------------------------------------------------------------------
+Build Datascriber tool that translates user's natural text query to SQL query and executes the query at on premises 
+on archived data sources and provide the data in downloadable format. 
+Datascriber is a comprehensive data query solution that leverages AI to simplify data access.
+
+Datascriber has several layers/components like Table Identifier Agent (TIA), Prompt Generation Agent (PROGA), LLM Layer, 
+On-Premises Data Execution Engine (OPDEN) and a Web Interface (GUI)
+
+Components Details:
+---------------------------------------------------
+Web Interface (GUI): 	
+In this layer authenticated users will be enabled with selectable data sources that they are authorized to access.
+User selects the data source from the drop down, a query text box will be enabled for user.
+User enters query in natural language (NLQ) with context to application  in the query box, then the backend components  
+TIA, PROGA, LLM Layer and OPDEN will process the user's NLQ and responds back with a limited data response or with 
+some validation messages. If user's NLQ is proccessed successfully by all the backend components then a response is given
+to user with limited data view, if user accepts the limited data response, then complete data will be provided as downloadable
+file by the system. If the system (sytem means , includes all components) cannot respond to user in the expected way, the back end
+team will be notified and the system will be fine tuned based on the users request validity, or else the User will be educated on
+how to use system. In GUI, if user enters non-contextual queries that are not related to selected data source, user will be notified 
+with appropriate message. Auto suggestion based queries will appear for user based on the trained scenarios and the continuous 
+usage by user. The user can pick the auto suggested query and get their query executed.
+
+Table Identifier Agent (TIA):
+-----------------------------------------------------
+The Table Identifier Agent is a Python-based application designed to analyze database schemas and process users natural language queries (NLQs) 
+to identify the relevant tables for the selected data source. It leverages natural language processing (NLP), machine learning (ML), 
+and data source's metadata to map user queries to data source tables/files/entities. When user enters query (NLQ) in GUI, the query is send to TIA,
+then TIA converts user queries e.g., "total sales amount at store Baldwin Bikes for January month" into relevant 
+database tables e.g., sales.orders, sales.stores
+TIA does Data Source analysis and extracts the meta data along with the relations.
+This component will be executed independently by back end team initially and later times also to train the TIA for predicting tables accurately.
+TIA is feeded with a training data that is created from the Data Sources which covers the Business users scenarios. The training data
+contains DATA_SOURCE_NAME,NLQ,EQUIVALENT_SQL,RELEVANT_TABLES,SPECIFIC_COLUMNS,META_DATA_SPECIF_INFO to train the TIA underlying mini model.
+A mini model will be created in deployed environment for the each configured/selected Data sources by TIA, so that the context always
+remains specific to that selected Data Source only. For this TIA uses NLP techniques, uses Sentence Transformers Small Language Models.
+After feeding the training data, Back End Engineers will test the TIA component manually to test the accuracy for table predictions, during 
+this phase if TIA doesn't predict accurately or shows low low confidence, then Backend Engineer will manualy add the relevant tables.
+This is the manual feedback process, and TIA will enhance predictions with manual predictions for later scenarios also.
+Once the TIA is trained manually and verified for that Data Source, it will be integrated in Datascriber for working with other component
+called PROGA. Post integration, If TIA fails or shows low confidence, the user will be shown message to enter query more contextually and 
+will be given some examples related to the selected Data source.
+
+Developement of TIA is done in below phases (Sub-Components):
+1. Backend User Interface which is a CLI
+2. Core Processing that has Data Source Analyzer & Natural Language Query Processor
+3. Analysis Phase that has components like Table Identifier, Name Match Manager, NLP Pipeline
+4. Data Management that has components like Schema Manager, Feedback Manager, Cache Synchronizer for lock less back end processing of TIA training
+5. Configurations that manages Data Source Configurations, Data Source Connections, Small Language Model Initialization
+6. Cache DB that manage the Feedback Vector Embeddings, synonyms and storing NLQs.
+
+Prompt Generation Agent (PROGA):
+---------------------------------------------
+The main purpose of PROGA is to automatically generate  a prompt for the configured LLM and send it to LLM to retrieve the SQL.
+PROGA will be given inputs by TIA with the User's NLQ, Predicted Tables, Tables Metadata, example scenario with a EQUIVALENT_SQL query 
+that was provided as part of training phase. Using the TIA's information, appropriate Prompt Text will be built including any 
+specific instructions for LLM. Once the prompt text is built it will be sent to the configured LLM that is deployed in Cloud,
+the configured LLM will send its response and then the SQL  will be extracted from the LLM response and send to OPDEN.
+
+On-Premises Data Execution Engine (OPDEN):
+----------------------------------------------
+Once the OPDEN recieves a SQL String , OPDEN validates the query. On successful validation, OPDEN runs the query for a limited data set.
+If data is available, then it will be shown on the Web Interface (GUI) and the user will be prompted for the data validity. 
+If user accepts the data the feedback will be stored for that query, and in next interaction the user will get auto suggestion and in the
+backend the processes will retrieve the query from the feedback storage instead of performing Prompt Generation, querying LLM, and query
+validation. If the data is more than Display Limit Configuration, user will be informed that larger data requests will be provided in
+downloadable link after the OPDEN executes the job.
+
+
+Note: If I refer Table any where please note that it might be a Table from RDBMS, CSV/ORC/Parquet data file from Archived Data Sources
