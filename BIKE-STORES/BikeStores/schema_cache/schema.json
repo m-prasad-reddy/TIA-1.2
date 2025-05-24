@@ -1,0 +1,456 @@
+{
+  "tables": {
+    "production": [
+      "categories",
+      "brands",
+      "products",
+      "stocks"
+    ],
+    "sales": [
+      "customers",
+      "stores",
+      "staffs",
+      "orders",
+      "order_items"
+    ]
+  },
+  "columns": {
+    "production": {
+      "categories": {
+        "category_id": {
+          "type": "categories",
+          "nullable": false,
+          "default": null
+        },
+        "category_name": {
+          "type": "categories",
+          "nullable": false,
+          "default": null
+        }
+      },
+      "brands": {
+        "brand_id": {
+          "type": "brands",
+          "nullable": false,
+          "default": null
+        },
+        "brand_name": {
+          "type": "brands",
+          "nullable": false,
+          "default": null
+        }
+      },
+      "products": {
+        "product_id": {
+          "type": "products",
+          "nullable": false,
+          "default": null
+        },
+        "product_name": {
+          "type": "products",
+          "nullable": false,
+          "default": null
+        },
+        "brand_id": {
+          "type": "products",
+          "nullable": false,
+          "default": null
+        },
+        "category_id": {
+          "type": "products",
+          "nullable": false,
+          "default": null
+        },
+        "model_year": {
+          "type": "products",
+          "nullable": false,
+          "default": null
+        },
+        "list_price": {
+          "type": "products",
+          "nullable": false,
+          "default": null
+        }
+      },
+      "stocks": {
+        "store_id": {
+          "type": "stocks",
+          "nullable": false,
+          "default": null
+        },
+        "product_id": {
+          "type": "stocks",
+          "nullable": false,
+          "default": null
+        },
+        "quantity": {
+          "type": "stocks",
+          "nullable": true,
+          "default": null
+        }
+      }
+    },
+    "sales": {
+      "customers": {
+        "customer_id": {
+          "type": "customers",
+          "nullable": false,
+          "default": null
+        },
+        "first_name": {
+          "type": "customers",
+          "nullable": false,
+          "default": null
+        },
+        "last_name": {
+          "type": "customers",
+          "nullable": false,
+          "default": null
+        },
+        "phone": {
+          "type": "customers",
+          "nullable": true,
+          "default": null
+        },
+        "email": {
+          "type": "customers",
+          "nullable": false,
+          "default": null
+        },
+        "street": {
+          "type": "customers",
+          "nullable": true,
+          "default": null
+        },
+        "city": {
+          "type": "customers",
+          "nullable": true,
+          "default": null
+        },
+        "state": {
+          "type": "customers",
+          "nullable": true,
+          "default": null
+        },
+        "zip_code": {
+          "type": "customers",
+          "nullable": true,
+          "default": null
+        }
+      },
+      "stores": {
+        "store_id": {
+          "type": "stores",
+          "nullable": false,
+          "default": null
+        },
+        "store_name": {
+          "type": "stores",
+          "nullable": false,
+          "default": null
+        },
+        "phone": {
+          "type": "stores",
+          "nullable": true,
+          "default": null
+        },
+        "email": {
+          "type": "stores",
+          "nullable": true,
+          "default": null
+        },
+        "street": {
+          "type": "stores",
+          "nullable": true,
+          "default": null
+        },
+        "city": {
+          "type": "stores",
+          "nullable": true,
+          "default": null
+        },
+        "state": {
+          "type": "stores",
+          "nullable": true,
+          "default": null
+        },
+        "zip_code": {
+          "type": "stores",
+          "nullable": true,
+          "default": null
+        }
+      },
+      "staffs": {
+        "staff_id": {
+          "type": "staffs",
+          "nullable": false,
+          "default": null
+        },
+        "first_name": {
+          "type": "staffs",
+          "nullable": false,
+          "default": null
+        },
+        "last_name": {
+          "type": "staffs",
+          "nullable": false,
+          "default": null
+        },
+        "email": {
+          "type": "staffs",
+          "nullable": false,
+          "default": null
+        },
+        "phone": {
+          "type": "staffs",
+          "nullable": true,
+          "default": null
+        },
+        "active": {
+          "type": "staffs",
+          "nullable": false,
+          "default": null
+        },
+        "store_id": {
+          "type": "staffs",
+          "nullable": false,
+          "default": null
+        },
+        "manager_id": {
+          "type": "staffs",
+          "nullable": true,
+          "default": null
+        }
+      },
+      "orders": {
+        "order_id": {
+          "type": "orders",
+          "nullable": false,
+          "default": null
+        },
+        "customer_id": {
+          "type": "orders",
+          "nullable": true,
+          "default": null
+        },
+        "order_status": {
+          "type": "orders",
+          "nullable": false,
+          "default": null
+        },
+        "order_date": {
+          "type": "orders",
+          "nullable": false,
+          "default": null
+        },
+        "required_date": {
+          "type": "orders",
+          "nullable": false,
+          "default": null
+        },
+        "shipped_date": {
+          "type": "orders",
+          "nullable": true,
+          "default": null
+        },
+        "store_id": {
+          "type": "orders",
+          "nullable": false,
+          "default": null
+        },
+        "staff_id": {
+          "type": "orders",
+          "nullable": false,
+          "default": null
+        }
+      },
+      "order_items": {
+        "order_id": {
+          "type": "order_items",
+          "nullable": false,
+          "default": null
+        },
+        "item_id": {
+          "type": "order_items",
+          "nullable": false,
+          "default": null
+        },
+        "product_id": {
+          "type": "order_items",
+          "nullable": false,
+          "default": null
+        },
+        "quantity": {
+          "type": "order_items",
+          "nullable": false,
+          "default": null
+        },
+        "list_price": {
+          "type": "order_items",
+          "nullable": false,
+          "default": null
+        },
+        "discount": {
+          "type": "order_items",
+          "nullable": false,
+          "default": "((0))"
+        }
+      }
+    }
+  },
+  "primary_keys": {
+    "production": {
+      "categories": [
+        "category_id"
+      ],
+      "brands": [
+        "brand_id"
+      ],
+      "products": [
+        "product_id"
+      ],
+      "stocks": [
+        "product_id",
+        "store_id"
+      ]
+    },
+    "sales": {
+      "customers": [
+        "customer_id"
+      ],
+      "stores": [
+        "store_id"
+      ],
+      "staffs": [
+        "staff_id"
+      ],
+      "orders": [
+        "order_id"
+      ],
+      "order_items": [
+        "item_id",
+        "order_id"
+      ]
+    }
+  },
+  "foreign_keys": {
+    "production": {
+      "products": [
+        {
+          "column": "brand_id",
+          "referenced_schema": "production",
+          "referenced_table": "products",
+          "referenced_column": "brand_id"
+        },
+        {
+          "column": "category_id",
+          "referenced_schema": "production",
+          "referenced_table": "products",
+          "referenced_column": "category_id"
+        }
+      ],
+      "stocks": [
+        {
+          "column": "product_id",
+          "referenced_schema": "production",
+          "referenced_table": "stocks",
+          "referenced_column": "product_id"
+        },
+        {
+          "column": "store_id",
+          "referenced_schema": "production",
+          "referenced_table": "stocks",
+          "referenced_column": "store_id"
+        }
+      ]
+    },
+    "sales": {
+      "staffs": [
+        {
+          "column": "manager_id",
+          "referenced_schema": "sales",
+          "referenced_table": "staffs",
+          "referenced_column": "manager_id"
+        },
+        {
+          "column": "store_id",
+          "referenced_schema": "sales",
+          "referenced_table": "staffs",
+          "referenced_column": "store_id"
+        }
+      ],
+      "orders": [
+        {
+          "column": "customer_id",
+          "referenced_schema": "sales",
+          "referenced_table": "orders",
+          "referenced_column": "customer_id"
+        },
+        {
+          "column": "staff_id",
+          "referenced_schema": "sales",
+          "referenced_table": "orders",
+          "referenced_column": "staff_id"
+        },
+        {
+          "column": "store_id",
+          "referenced_schema": "sales",
+          "referenced_table": "orders",
+          "referenced_column": "store_id"
+        }
+      ],
+      "order_items": [
+        {
+          "column": "order_id",
+          "referenced_schema": "sales",
+          "referenced_table": "order_items",
+          "referenced_column": "order_id"
+        },
+        {
+          "column": "product_id",
+          "referenced_schema": "sales",
+          "referenced_table": "order_items",
+          "referenced_column": "product_id"
+        }
+      ]
+    }
+  },
+  "views": {
+    "production": [],
+    "sales": []
+  },
+  "indexes": {
+    "production": {
+      "categories": [
+        "PK__categori__D54EE9B444E69120"
+      ],
+      "brands": [
+        "PK__brands__5E5A8E278D0ED369"
+      ],
+      "products": [
+        "PK__products__47027DF58131DCD4"
+      ],
+      "stocks": [
+        "PK__stocks__E68284D36B1CDE5F"
+      ]
+    },
+    "sales": {
+      "customers": [
+        "PK__customer__CD65CB85FCA4AA5E"
+      ],
+      "stores": [
+        "PK__stores__A2F2A30CE954D612"
+      ],
+      "staffs": [
+        "PK__staffs__1963DD9C07623F77",
+        "UQ__staffs__AB6E6164EB653B25"
+      ],
+      "orders": [
+        "PK__orders__46596229BB08BD29"
+      ],
+      "order_items": [
+        "PK__order_it__837942D4C6A06D12"
+      ]
+    }
+  }
+}

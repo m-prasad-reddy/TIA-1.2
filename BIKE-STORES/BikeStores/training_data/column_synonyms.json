@@ -1,0 +1,144 @@
+{
+  "hr.candidates": {
+    "id": [],
+    "fullname": []
+  },
+  "hr.employees": {
+    "id": [],
+    "fullname": []
+  },
+  "production.categories": {
+    "category_id": [
+      "categoryid",
+      "category_id",
+      "type id"
+    ],
+    "category_name": [
+      "type name",
+      "category name",
+      "category_name"
+    ]
+  },
+  "production.brands": {
+    "brand_id": [],
+    "brand_name": []
+  },
+  "production.products": {
+    "product_id": [
+      "product_id",
+      "productid",
+      "item id"
+    ],
+    "product_name": [],
+    "brand_id": [],
+    "category_id": [
+      "categoryid",
+      "category_id",
+      "type id"
+    ],
+    "model_year": [],
+    "list_price": []
+  },
+  "production.stocks": {
+    "store_id": [
+      "store number",
+      "store_id",
+      "storeid"
+    ],
+    "product_id": [
+      "product_id",
+      "productid",
+      "item id"
+    ],
+    "quantity": []
+  },
+  "sales.customers": {
+    "customer_id": [
+      "client id",
+      "customerid",
+      "customer_id"
+    ],
+    "first_name": [],
+    "last_name": [],
+    "phone": [],
+    "email": [],
+    "street": [],
+    "city": [],
+    "state": [],
+    "zip_code": []
+  },
+  "sales.stores": {
+    "store_id": [
+      "store number",
+      "store_id",
+      "storeid"
+    ],
+    "store_name": [
+      "name",
+      "store_name",
+      "store name"
+    ],
+    "phone": [],
+    "email": [],
+    "street": [],
+    "city": [],
+    "state": [],
+    "zip_code": []
+  },
+  "sales.staffs": {
+    "staff_id": [],
+    "first_name": [],
+    "last_name": [],
+    "email": [],
+    "phone": [],
+    "active": [],
+    "store_id": [
+      "store number",
+      "store_id",
+      "storeid"
+    ],
+    "manager_id": []
+  },
+  "sales.orders": {
+    "order_id": [
+      "order_id",
+      "order number",
+      "orderid"
+    ],
+    "customer_id": [
+      "client id",
+      "customerid",
+      "customer_id"
+    ],
+    "order_status": [],
+    "order_date": [
+      "order_date",
+      "date",
+      "order date"
+    ],
+    "required_date": [],
+    "shipped_date": [],
+    "store_id": [
+      "store number",
+      "store_id",
+      "storeid"
+    ],
+    "staff_id": []
+  },
+  "sales.order_items": {
+    "order_id": [
+      "order_id",
+      "order number",
+      "orderid"
+    ],
+    "item_id": [],
+    "product_id": [
+      "product_id",
+      "productid",
+      "item id"
+    ],
+    "quantity": [],
+    "list_price": [],
+    "discount": []
+  }
+}

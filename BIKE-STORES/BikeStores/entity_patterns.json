@@ -1,0 +1,6 @@
+[
+    {"label": "TABLE", "pattern": [{"LOWER": "orders"}]},
+    {"label": "TABLE", "pattern": [{"LOWER": "stores"}]},
+    {"label": "COLUMN", "pattern": [{"LOWER": "order_date"}]},
+    {"label": "COLUMN", "pattern": [{"LOWER": "store_name"}]}
+]

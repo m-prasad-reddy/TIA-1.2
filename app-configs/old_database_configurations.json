@@ -1,0 +1,29 @@
+{
+    "ADWORKS_DB":{
+      "server": "localhost",
+      "database": "adventureworks",
+      "username": "sa",
+	  "schemas": ["SalesLT"],
+	  "tables" : [],
+	  "driver": "ODBC Driver 17 for SQL Server",
+      "password": "S0rry!43"
+    },
+    "ADWORKS2019_DB": {
+      "server": "localhost",
+      "database": "AdventureWorksDW2019",
+      "username": "sa",
+	  "tables" : ["dbo.AdventureWorksDWBuildVersion","dbo.DimAccount","dbo.DimCurrency"],
+	  "schemas": [],
+	  "driver": "ODBC Driver 17 for SQL Server",
+      "password": "S0rry!43"
+    },
+    "BIKES_DB": {
+      "server": "localhost",
+      "database": "BikeStores",
+	  "schemas": ["hr", "production", "sales"],
+	  "tables" : [],
+      "username": "sa",
+	  "driver": "ODBC Driver 17 for SQL Server",
+      "password": "S0rry!43"
+    }
+ }

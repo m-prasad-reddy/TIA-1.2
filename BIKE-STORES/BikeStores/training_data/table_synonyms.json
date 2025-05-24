@@ -1,0 +1,23 @@
+{
+  "hr.candidates": [],
+  "hr.employees": [],
+  "production.categories": [
+    "category"
+  ],
+  "production.brands": [],
+  "production.products": [
+    "product"
+  ],
+  "production.stocks": [],
+  "sales.customers": [
+    "customer"
+  ],
+  "sales.stores": [
+    "store"
+  ],
+  "sales.staffs": [],
+  "sales.orders": [
+    "order"
+  ],
+  "sales.order_items": []
+}

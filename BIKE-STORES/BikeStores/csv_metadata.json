@@ -1,0 +1,18 @@
+{
+    "tables": {
+        "orders": {
+            "path": "s3://bike-stores-bucket/data-files/orders.csv",
+            "columns": {
+                "order_id": {"type": "int", "nullable": false},
+                "order_date": {"type": "date", "nullable": true}
+            }
+        },
+        "stores": {
+            "path": "s3://bike-stores-bucket/data-files/stores.csv",
+            "columns": {
+                "store_id": {"type": "int", "nullable": false},
+                "store_name": {"type": "varchar", "nullable": true}
+            }
+        }
+    }
+}

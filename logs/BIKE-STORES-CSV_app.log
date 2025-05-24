@@ -1,0 +1,24 @@
+2025-05-24 00:25:44,037 - tia - INFO - Logging configured for BIKE-STORES-CSV/bikestores-csv using app-configs
+2025-05-24 00:25:44,038 - schema - INFO - Initialized SchemaManager for BIKE-STORES-CSV/bikestores-csv, schemas=['default'], tables=[]
+2025-05-24 00:25:44,038 - interface - ERROR - Connection attempt 2 failed: 'type'
+Traceback (most recent call last):
+  File "C:\Users\varaprasad\Pythonworks\Text2SQl\TIA-1.2\cli\interface.py", line 186, in _connect_to_database
+    if self.config["type"].lower() == "s3":
+       ~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+2025-05-24 00:25:44,255 - tia - DEBUG - Loaded 4 configurations from app-configs\db_configurations.json
+2025-05-24 00:25:44,256 - interface - DEBUG - Loaded 4 configurations
+2025-05-24 00:25:47,770 - interface - DEBUG - Configuration choice: 5
+2025-05-24 00:25:49,637 - interface - DEBUG - User selected option: 2
+2025-05-24 00:25:49,638 - interface - WARNING - Schema or feedback manager not initialized
+2025-05-24 00:25:55,037 - interface - DEBUG - User selected option: 4
+2025-05-24 00:25:55,038 - interface - WARNING - Feedback manager not initialized
+2025-05-24 00:25:58,143 - interface - DEBUG - User selected option: 6
+2025-05-24 00:25:58,143 - interface - WARNING - Schema not initialized
+2025-05-24 00:26:00,775 - interface - DEBUG - User selected option: 10
+2025-05-24 00:26:00,776 - cache_synchronizer - DEBUG - No open SQLite connection to close
+2025-05-24 00:26:00,776 - interface - ERROR - Error during cleanup: object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\varaprasad\Pythonworks\Text2SQl\TIA-1.2\cli\interface.py", line 988, in _cleanup
+    await self.cache_synchronizer.close()
+TypeError: object NoneType can't be used in 'await' expression

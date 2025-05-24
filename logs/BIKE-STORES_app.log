@@ -1,0 +1,19 @@
+2025-05-24 00:24:10,136 - interface - DEBUG - User selected option: 1
+2025-05-24 00:24:10,137 - tia - DEBUG - Loaded 4 configurations from app-configs\db_configurations.json
+2025-05-24 00:24:10,138 - interface - DEBUG - Loaded 4 configurations
+2025-05-24 00:24:13,377 - interface - DEBUG - Configuration choice: 1
+2025-05-24 00:24:13,378 - tia - DEBUG - Loaded config for bikestores from app-configs\db_configurations.json
+2025-05-24 00:24:13,378 - tia - DEBUG - Loaded config for bikestores from app-configs\db_configurations.json
+2025-05-24 00:24:13,380 - tia - INFO - Logging configured for BIKE-STORES/BikeStores using app-configs
+2025-05-24 00:24:13,381 - schema - INFO - Initialized SchemaManager for BIKE-STORES/BikeStores, schemas=['production', 'sales'], tables=[]
+2025-05-24 00:24:13,381 - interface - ERROR - Connection attempt 1 failed: 'type'
+Traceback (most recent call last):
+  File "C:\Users\varaprasad\Pythonworks\Text2SQl\TIA-1.2\cli\interface.py", line 186, in _connect_to_database
+    if self.config["type"].lower() == "s3":
+       ~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+2025-05-24 00:24:13,498 - tia - DEBUG - Loaded 4 configurations from app-configs\db_configurations.json
+2025-05-24 00:24:13,499 - interface - DEBUG - Loaded 4 configurations
+2025-05-24 00:25:44,034 - interface - DEBUG - Configuration choice: 2
+2025-05-24 00:25:44,035 - tia - DEBUG - Loaded config for bikestores-csv from app-configs\db_configurations.json
+2025-05-24 00:25:44,036 - tia - DEBUG - Loaded config for bikestores-csv from app-configs\db_configurations.json

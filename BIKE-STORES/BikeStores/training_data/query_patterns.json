@@ -1,0 +1,930 @@
+[
+  {
+    "query": "SELECT * FROM hr.candidates",
+    "table": "hr.candidates"
+  },
+  {
+    "query": "LIST hr.candidates",
+    "table": "hr.candidates"
+  },
+  {
+    "query": "SELECT id FROM hr.candidates",
+    "table": "hr.candidates",
+    "column": "id"
+  },
+  {
+    "query": "FIND id IN hr.candidates",
+    "table": "hr.candidates",
+    "column": "id"
+  },
+  {
+    "query": "GET id FROM hr.candidates WHERE id = 'value'",
+    "table": "hr.candidates",
+    "column": "id"
+  },
+  {
+    "query": "SELECT fullname FROM hr.candidates",
+    "table": "hr.candidates",
+    "column": "fullname"
+  },
+  {
+    "query": "FIND fullname IN hr.candidates",
+    "table": "hr.candidates",
+    "column": "fullname"
+  },
+  {
+    "query": "GET fullname FROM hr.candidates WHERE fullname = 'value'",
+    "table": "hr.candidates",
+    "column": "fullname"
+  },
+  {
+    "query": "SELECT * FROM hr.employees",
+    "table": "hr.employees"
+  },
+  {
+    "query": "LIST hr.employees",
+    "table": "hr.employees"
+  },
+  {
+    "query": "SELECT id FROM hr.employees",
+    "table": "hr.employees",
+    "column": "id"
+  },
+  {
+    "query": "FIND id IN hr.employees",
+    "table": "hr.employees",
+    "column": "id"
+  },
+  {
+    "query": "GET id FROM hr.employees WHERE id = 'value'",
+    "table": "hr.employees",
+    "column": "id"
+  },
+  {
+    "query": "SELECT fullname FROM hr.employees",
+    "table": "hr.employees",
+    "column": "fullname"
+  },
+  {
+    "query": "FIND fullname IN hr.employees",
+    "table": "hr.employees",
+    "column": "fullname"
+  },
+  {
+    "query": "GET fullname FROM hr.employees WHERE fullname = 'value'",
+    "table": "hr.employees",
+    "column": "fullname"
+  },
+  {
+    "query": "SELECT * FROM production.categories",
+    "table": "production.categories"
+  },
+  {
+    "query": "LIST production.categories",
+    "table": "production.categories"
+  },
+  {
+    "query": "SELECT category_id FROM production.categories",
+    "table": "production.categories",
+    "column": "category_id"
+  },
+  {
+    "query": "FIND category_id IN production.categories",
+    "table": "production.categories",
+    "column": "category_id"
+  },
+  {
+    "query": "GET category_id FROM production.categories WHERE category_id = 'value'",
+    "table": "production.categories",
+    "column": "category_id"
+  },
+  {
+    "query": "SELECT category_name FROM production.categories",
+    "table": "production.categories",
+    "column": "category_name"
+  },
+  {
+    "query": "FIND category_name IN production.categories",
+    "table": "production.categories",
+    "column": "category_name"
+  },
+  {
+    "query": "GET category_name FROM production.categories WHERE category_name = 'value'",
+    "table": "production.categories",
+    "column": "category_name"
+  },
+  {
+    "query": "SELECT * FROM production.brands",
+    "table": "production.brands"
+  },
+  {
+    "query": "LIST production.brands",
+    "table": "production.brands"
+  },
+  {
+    "query": "SELECT brand_id FROM production.brands",
+    "table": "production.brands",
+    "column": "brand_id"
+  },
+  {
+    "query": "FIND brand_id IN production.brands",
+    "table": "production.brands",
+    "column": "brand_id"
+  },
+  {
+    "query": "GET brand_id FROM production.brands WHERE brand_id = 'value'",
+    "table": "production.brands",
+    "column": "brand_id"
+  },
+  {
+    "query": "SELECT brand_name FROM production.brands",
+    "table": "production.brands",
+    "column": "brand_name"
+  },
+  {
+    "query": "FIND brand_name IN production.brands",
+    "table": "production.brands",
+    "column": "brand_name"
+  },
+  {
+    "query": "GET brand_name FROM production.brands WHERE brand_name = 'value'",
+    "table": "production.brands",
+    "column": "brand_name"
+  },
+  {
+    "query": "SELECT * FROM production.products",
+    "table": "production.products"
+  },
+  {
+    "query": "LIST production.products",
+    "table": "production.products"
+  },
+  {
+    "query": "SELECT product_id FROM production.products",
+    "table": "production.products",
+    "column": "product_id"
+  },
+  {
+    "query": "FIND product_id IN production.products",
+    "table": "production.products",
+    "column": "product_id"
+  },
+  {
+    "query": "GET product_id FROM production.products WHERE product_id = 'value'",
+    "table": "production.products",
+    "column": "product_id"
+  },
+  {
+    "query": "SELECT product_name FROM production.products",
+    "table": "production.products",
+    "column": "product_name"
+  },
+  {
+    "query": "FIND product_name IN production.products",
+    "table": "production.products",
+    "column": "product_name"
+  },
+  {
+    "query": "GET product_name FROM production.products WHERE product_name = 'value'",
+    "table": "production.products",
+    "column": "product_name"
+  },
+  {
+    "query": "SELECT brand_id FROM production.products",
+    "table": "production.products",
+    "column": "brand_id"
+  },
+  {
+    "query": "FIND brand_id IN production.products",
+    "table": "production.products",
+    "column": "brand_id"
+  },
+  {
+    "query": "GET brand_id FROM production.products WHERE brand_id = 'value'",
+    "table": "production.products",
+    "column": "brand_id"
+  },
+  {
+    "query": "SELECT category_id FROM production.products",
+    "table": "production.products",
+    "column": "category_id"
+  },
+  {
+    "query": "FIND category_id IN production.products",
+    "table": "production.products",
+    "column": "category_id"
+  },
+  {
+    "query": "GET category_id FROM production.products WHERE category_id = 'value'",
+    "table": "production.products",
+    "column": "category_id"
+  },
+  {
+    "query": "SELECT model_year FROM production.products",
+    "table": "production.products",
+    "column": "model_year"
+  },
+  {
+    "query": "FIND model_year IN production.products",
+    "table": "production.products",
+    "column": "model_year"
+  },
+  {
+    "query": "GET model_year FROM production.products WHERE model_year = 'value'",
+    "table": "production.products",
+    "column": "model_year"
+  },
+  {
+    "query": "SELECT list_price FROM production.products",
+    "table": "production.products",
+    "column": "list_price"
+  },
+  {
+    "query": "FIND list_price IN production.products",
+    "table": "production.products",
+    "column": "list_price"
+  },
+  {
+    "query": "GET list_price FROM production.products WHERE list_price = 'value'",
+    "table": "production.products",
+    "column": "list_price"
+  },
+  {
+    "query": "SELECT * FROM production.stocks",
+    "table": "production.stocks"
+  },
+  {
+    "query": "LIST production.stocks",
+    "table": "production.stocks"
+  },
+  {
+    "query": "SELECT store_id FROM production.stocks",
+    "table": "production.stocks",
+    "column": "store_id"
+  },
+  {
+    "query": "FIND store_id IN production.stocks",
+    "table": "production.stocks",
+    "column": "store_id"
+  },
+  {
+    "query": "GET store_id FROM production.stocks WHERE store_id = 'value'",
+    "table": "production.stocks",
+    "column": "store_id"
+  },
+  {
+    "query": "SELECT product_id FROM production.stocks",
+    "table": "production.stocks",
+    "column": "product_id"
+  },
+  {
+    "query": "FIND product_id IN production.stocks",
+    "table": "production.stocks",
+    "column": "product_id"
+  },
+  {
+    "query": "GET product_id FROM production.stocks WHERE product_id = 'value'",
+    "table": "production.stocks",
+    "column": "product_id"
+  },
+  {
+    "query": "SELECT quantity FROM production.stocks",
+    "table": "production.stocks",
+    "column": "quantity"
+  },
+  {
+    "query": "FIND quantity IN production.stocks",
+    "table": "production.stocks",
+    "column": "quantity"
+  },
+  {
+    "query": "GET quantity FROM production.stocks WHERE quantity = 'value'",
+    "table": "production.stocks",
+    "column": "quantity"
+  },
+  {
+    "query": "SELECT * FROM sales.customers",
+    "table": "sales.customers"
+  },
+  {
+    "query": "LIST sales.customers",
+    "table": "sales.customers"
+  },
+  {
+    "query": "SELECT customer_id FROM sales.customers",
+    "table": "sales.customers",
+    "column": "customer_id"
+  },
+  {
+    "query": "FIND customer_id IN sales.customers",
+    "table": "sales.customers",
+    "column": "customer_id"
+  },
+  {
+    "query": "GET customer_id FROM sales.customers WHERE customer_id = 'value'",
+    "table": "sales.customers",
+    "column": "customer_id"
+  },
+  {
+    "query": "SELECT first_name FROM sales.customers",
+    "table": "sales.customers",
+    "column": "first_name"
+  },
+  {
+    "query": "FIND first_name IN sales.customers",
+    "table": "sales.customers",
+    "column": "first_name"
+  },
+  {
+    "query": "GET first_name FROM sales.customers WHERE first_name = 'value'",
+    "table": "sales.customers",
+    "column": "first_name"
+  },
+  {
+    "query": "SELECT last_name FROM sales.customers",
+    "table": "sales.customers",
+    "column": "last_name"
+  },
+  {
+    "query": "FIND last_name IN sales.customers",
+    "table": "sales.customers",
+    "column": "last_name"
+  },
+  {
+    "query": "GET last_name FROM sales.customers WHERE last_name = 'value'",
+    "table": "sales.customers",
+    "column": "last_name"
+  },
+  {
+    "query": "SELECT phone FROM sales.customers",
+    "table": "sales.customers",
+    "column": "phone"
+  },
+  {
+    "query": "FIND phone IN sales.customers",
+    "table": "sales.customers",
+    "column": "phone"
+  },
+  {
+    "query": "GET phone FROM sales.customers WHERE phone = 'value'",
+    "table": "sales.customers",
+    "column": "phone"
+  },
+  {
+    "query": "SELECT email FROM sales.customers",
+    "table": "sales.customers",
+    "column": "email"
+  },
+  {
+    "query": "FIND email IN sales.customers",
+    "table": "sales.customers",
+    "column": "email"
+  },
+  {
+    "query": "GET email FROM sales.customers WHERE email = 'value'",
+    "table": "sales.customers",
+    "column": "email"
+  },
+  {
+    "query": "SELECT street FROM sales.customers",
+    "table": "sales.customers",
+    "column": "street"
+  },
+  {
+    "query": "FIND street IN sales.customers",
+    "table": "sales.customers",
+    "column": "street"
+  },
+  {
+    "query": "GET street FROM sales.customers WHERE street = 'value'",
+    "table": "sales.customers",
+    "column": "street"
+  },
+  {
+    "query": "SELECT city FROM sales.customers",
+    "table": "sales.customers",
+    "column": "city"
+  },
+  {
+    "query": "FIND city IN sales.customers",
+    "table": "sales.customers",
+    "column": "city"
+  },
+  {
+    "query": "GET city FROM sales.customers WHERE city = 'value'",
+    "table": "sales.customers",
+    "column": "city"
+  },
+  {
+    "query": "SELECT state FROM sales.customers",
+    "table": "sales.customers",
+    "column": "state"
+  },
+  {
+    "query": "FIND state IN sales.customers",
+    "table": "sales.customers",
+    "column": "state"
+  },
+  {
+    "query": "GET state FROM sales.customers WHERE state = 'value'",
+    "table": "sales.customers",
+    "column": "state"
+  },
+  {
+    "query": "SELECT zip_code FROM sales.customers",
+    "table": "sales.customers",
+    "column": "zip_code"
+  },
+  {
+    "query": "FIND zip_code IN sales.customers",
+    "table": "sales.customers",
+    "column": "zip_code"
+  },
+  {
+    "query": "GET zip_code FROM sales.customers WHERE zip_code = 'value'",
+    "table": "sales.customers",
+    "column": "zip_code"
+  },
+  {
+    "query": "SELECT * FROM sales.stores",
+    "table": "sales.stores"
+  },
+  {
+    "query": "LIST sales.stores",
+    "table": "sales.stores"
+  },
+  {
+    "query": "SELECT store_id FROM sales.stores",
+    "table": "sales.stores",
+    "column": "store_id"
+  },
+  {
+    "query": "FIND store_id IN sales.stores",
+    "table": "sales.stores",
+    "column": "store_id"
+  },
+  {
+    "query": "GET store_id FROM sales.stores WHERE store_id = 'value'",
+    "table": "sales.stores",
+    "column": "store_id"
+  },
+  {
+    "query": "SELECT store_name FROM sales.stores",
+    "table": "sales.stores",
+    "column": "store_name"
+  },
+  {
+    "query": "FIND store_name IN sales.stores",
+    "table": "sales.stores",
+    "column": "store_name"
+  },
+  {
+    "query": "GET store_name FROM sales.stores WHERE store_name = 'value'",
+    "table": "sales.stores",
+    "column": "store_name"
+  },
+  {
+    "query": "SELECT phone FROM sales.stores",
+    "table": "sales.stores",
+    "column": "phone"
+  },
+  {
+    "query": "FIND phone IN sales.stores",
+    "table": "sales.stores",
+    "column": "phone"
+  },
+  {
+    "query": "GET phone FROM sales.stores WHERE phone = 'value'",
+    "table": "sales.stores",
+    "column": "phone"
+  },
+  {
+    "query": "SELECT email FROM sales.stores",
+    "table": "sales.stores",
+    "column": "email"
+  },
+  {
+    "query": "FIND email IN sales.stores",
+    "table": "sales.stores",
+    "column": "email"
+  },
+  {
+    "query": "GET email FROM sales.stores WHERE email = 'value'",
+    "table": "sales.stores",
+    "column": "email"
+  },
+  {
+    "query": "SELECT street FROM sales.stores",
+    "table": "sales.stores",
+    "column": "street"
+  },
+  {
+    "query": "FIND street IN sales.stores",
+    "table": "sales.stores",
+    "column": "street"
+  },
+  {
+    "query": "GET street FROM sales.stores WHERE street = 'value'",
+    "table": "sales.stores",
+    "column": "street"
+  },
+  {
+    "query": "SELECT city FROM sales.stores",
+    "table": "sales.stores",
+    "column": "city"
+  },
+  {
+    "query": "FIND city IN sales.stores",
+    "table": "sales.stores",
+    "column": "city"
+  },
+  {
+    "query": "GET city FROM sales.stores WHERE city = 'value'",
+    "table": "sales.stores",
+    "column": "city"
+  },
+  {
+    "query": "SELECT state FROM sales.stores",
+    "table": "sales.stores",
+    "column": "state"
+  },
+  {
+    "query": "FIND state IN sales.stores",
+    "table": "sales.stores",
+    "column": "state"
+  },
+  {
+    "query": "GET state FROM sales.stores WHERE state = 'value'",
+    "table": "sales.stores",
+    "column": "state"
+  },
+  {
+    "query": "SELECT zip_code FROM sales.stores",
+    "table": "sales.stores",
+    "column": "zip_code"
+  },
+  {
+    "query": "FIND zip_code IN sales.stores",
+    "table": "sales.stores",
+    "column": "zip_code"
+  },
+  {
+    "query": "GET zip_code FROM sales.stores WHERE zip_code = 'value'",
+    "table": "sales.stores",
+    "column": "zip_code"
+  },
+  {
+    "query": "SELECT * FROM sales.staffs",
+    "table": "sales.staffs"
+  },
+  {
+    "query": "LIST sales.staffs",
+    "table": "sales.staffs"
+  },
+  {
+    "query": "SELECT staff_id FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "staff_id"
+  },
+  {
+    "query": "FIND staff_id IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "staff_id"
+  },
+  {
+    "query": "GET staff_id FROM sales.staffs WHERE staff_id = 'value'",
+    "table": "sales.staffs",
+    "column": "staff_id"
+  },
+  {
+    "query": "SELECT first_name FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "first_name"
+  },
+  {
+    "query": "FIND first_name IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "first_name"
+  },
+  {
+    "query": "GET first_name FROM sales.staffs WHERE first_name = 'value'",
+    "table": "sales.staffs",
+    "column": "first_name"
+  },
+  {
+    "query": "SELECT last_name FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "last_name"
+  },
+  {
+    "query": "FIND last_name IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "last_name"
+  },
+  {
+    "query": "GET last_name FROM sales.staffs WHERE last_name = 'value'",
+    "table": "sales.staffs",
+    "column": "last_name"
+  },
+  {
+    "query": "SELECT email FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "email"
+  },
+  {
+    "query": "FIND email IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "email"
+  },
+  {
+    "query": "GET email FROM sales.staffs WHERE email = 'value'",
+    "table": "sales.staffs",
+    "column": "email"
+  },
+  {
+    "query": "SELECT phone FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "phone"
+  },
+  {
+    "query": "FIND phone IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "phone"
+  },
+  {
+    "query": "GET phone FROM sales.staffs WHERE phone = 'value'",
+    "table": "sales.staffs",
+    "column": "phone"
+  },
+  {
+    "query": "SELECT active FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "active"
+  },
+  {
+    "query": "FIND active IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "active"
+  },
+  {
+    "query": "GET active FROM sales.staffs WHERE active = 'value'",
+    "table": "sales.staffs",
+    "column": "active"
+  },
+  {
+    "query": "SELECT store_id FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "store_id"
+  },
+  {
+    "query": "FIND store_id IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "store_id"
+  },
+  {
+    "query": "GET store_id FROM sales.staffs WHERE store_id = 'value'",
+    "table": "sales.staffs",
+    "column": "store_id"
+  },
+  {
+    "query": "SELECT manager_id FROM sales.staffs",
+    "table": "sales.staffs",
+    "column": "manager_id"
+  },
+  {
+    "query": "FIND manager_id IN sales.staffs",
+    "table": "sales.staffs",
+    "column": "manager_id"
+  },
+  {
+    "query": "GET manager_id FROM sales.staffs WHERE manager_id = 'value'",
+    "table": "sales.staffs",
+    "column": "manager_id"
+  },
+  {
+    "query": "SELECT * FROM sales.orders",
+    "table": "sales.orders"
+  },
+  {
+    "query": "LIST sales.orders",
+    "table": "sales.orders"
+  },
+  {
+    "query": "SELECT order_id FROM sales.orders",
+    "table": "sales.orders",
+    "column": "order_id"
+  },
+  {
+    "query": "FIND order_id IN sales.orders",
+    "table": "sales.orders",
+    "column": "order_id"
+  },
+  {
+    "query": "GET order_id FROM sales.orders WHERE order_id = 'value'",
+    "table": "sales.orders",
+    "column": "order_id"
+  },
+  {
+    "query": "SELECT customer_id FROM sales.orders",
+    "table": "sales.orders",
+    "column": "customer_id"
+  },
+  {
+    "query": "FIND customer_id IN sales.orders",
+    "table": "sales.orders",
+    "column": "customer_id"
+  },
+  {
+    "query": "GET customer_id FROM sales.orders WHERE customer_id = 'value'",
+    "table": "sales.orders",
+    "column": "customer_id"
+  },
+  {
+    "query": "SELECT order_status FROM sales.orders",
+    "table": "sales.orders",
+    "column": "order_status"
+  },
+  {
+    "query": "FIND order_status IN sales.orders",
+    "table": "sales.orders",
+    "column": "order_status"
+  },
+  {
+    "query": "GET order_status FROM sales.orders WHERE order_status = 'value'",
+    "table": "sales.orders",
+    "column": "order_status"
+  },
+  {
+    "query": "SELECT order_date FROM sales.orders",
+    "table": "sales.orders",
+    "column": "order_date"
+  },
+  {
+    "query": "FIND order_date IN sales.orders",
+    "table": "sales.orders",
+    "column": "order_date"
+  },
+  {
+    "query": "GET order_date FROM sales.orders WHERE order_date = 'value'",
+    "table": "sales.orders",
+    "column": "order_date"
+  },
+  {
+    "query": "SELECT required_date FROM sales.orders",
+    "table": "sales.orders",
+    "column": "required_date"
+  },
+  {
+    "query": "FIND required_date IN sales.orders",
+    "table": "sales.orders",
+    "column": "required_date"
+  },
+  {
+    "query": "GET required_date FROM sales.orders WHERE required_date = 'value'",
+    "table": "sales.orders",
+    "column": "required_date"
+  },
+  {
+    "query": "SELECT shipped_date FROM sales.orders",
+    "table": "sales.orders",
+    "column": "shipped_date"
+  },
+  {
+    "query": "FIND shipped_date IN sales.orders",
+    "table": "sales.orders",
+    "column": "shipped_date"
+  },
+  {
+    "query": "GET shipped_date FROM sales.orders WHERE shipped_date = 'value'",
+    "table": "sales.orders",
+    "column": "shipped_date"
+  },
+  {
+    "query": "SELECT store_id FROM sales.orders",
+    "table": "sales.orders",
+    "column": "store_id"
+  },
+  {
+    "query": "FIND store_id IN sales.orders",
+    "table": "sales.orders",
+    "column": "store_id"
+  },
+  {
+    "query": "GET store_id FROM sales.orders WHERE store_id = 'value'",
+    "table": "sales.orders",
+    "column": "store_id"
+  },
+  {
+    "query": "SELECT staff_id FROM sales.orders",
+    "table": "sales.orders",
+    "column": "staff_id"
+  },
+  {
+    "query": "FIND staff_id IN sales.orders",
+    "table": "sales.orders",
+    "column": "staff_id"
+  },
+  {
+    "query": "GET staff_id FROM sales.orders WHERE staff_id = 'value'",
+    "table": "sales.orders",
+    "column": "staff_id"
+  },
+  {
+    "query": "SELECT * FROM sales.order_items",
+    "table": "sales.order_items"
+  },
+  {
+    "query": "LIST sales.order_items",
+    "table": "sales.order_items"
+  },
+  {
+    "query": "SELECT order_id FROM sales.order_items",
+    "table": "sales.order_items",
+    "column": "order_id"
+  },
+  {
+    "query": "FIND order_id IN sales.order_items",
+    "table": "sales.order_items",
+    "column": "order_id"
+  },
+  {
+    "query": "GET order_id FROM sales.order_items WHERE order_id = 'value'",
+    "table": "sales.order_items",
+    "column": "order_id"
+  },
+  {
+    "query": "SELECT item_id FROM sales.order_items",
+    "table": "sales.order_items",
+    "column": "item_id"
+  },
+  {
+    "query": "FIND item_id IN sales.order_items",
+    "table": "sales.order_items",
+    "column": "item_id"
+  },
+  {
+    "query": "GET item_id FROM sales.order_items WHERE item_id = 'value'",
+    "table": "sales.order_items",
+    "column": "item_id"
+  },
+  {
+    "query": "SELECT product_id FROM sales.order_items",
+    "table": "sales.order_items",
+    "column": "product_id"
+  },
+  {
+    "query": "FIND product_id IN sales.order_items",
+    "table": "sales.order_items",
+    "column": "product_id"
+  },
+  {
+    "query": "GET product_id FROM sales.order_items WHERE product_id = 'value'",
+    "table": "sales.order_items",
+    "column": "product_id"
+  },
+  {
+    "query": "SELECT quantity FROM sales.order_items",
+    "table": "sales.order_items",
+    "column": "quantity"
+  },
+  {
+    "query": "FIND quantity IN sales.order_items",
+    "table": "sales.order_items",
+    "column": "quantity"
+  },
+  {
+    "query": "GET quantity FROM sales.order_items WHERE quantity = 'value'",
+    "table": "sales.order_items",
+    "column": "quantity"
+  },
+  {
+    "query": "SELECT list_price FROM sales.order_items",
+    "table": "sales.order_items",
+    "column": "list_price"
+  },
+  {
+    "query": "FIND list_price IN sales.order_items",
+    "table": "sales.order_items",
+    "column": "list_price"
+  },
+  {
+    "query": "GET list_price FROM sales.order_items WHERE list_price = 'value'",
+    "table": "sales.order_items",
+    "column": "list_price"
+  },
+  {
+    "query": "SELECT discount FROM sales.order_items",
+    "table": "sales.order_items",
+    "column": "discount"
+  },
+  {
+    "query": "FIND discount IN sales.order_items",
+    "table": "sales.order_items",
+    "column": "discount"
+  },
+  {
+    "query": "GET discount FROM sales.order_items WHERE discount = 'value'",
+    "table": "sales.order_items",
+    "column": "discount"
+  }
+]

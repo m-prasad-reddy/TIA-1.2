@@ -1,0 +1,53 @@
+{
+  "databases": [
+    {
+      "type": "SQL Server",
+      "name": "bikestores",
+      "display_name": "BIKE-STORES",
+      "server": "localhost",
+      "database": "BikeStores",
+      "username": "sa",
+      "password": "p0rry123",
+      "driver": "ODBC Driver 17 for SQL Server",
+      "schemas": ["production", "sales"],
+      "tables": []
+    },
+    {
+      "type": "s3",
+      "name": "bikestores-csv",
+      "display_name": "BIKE-STORES-CSV",
+      "s3_endpoint": "https://s3.amazonaws.com",
+      "access_key": "acesskey",
+      "secret_key": "secretkey",
+      "bucket_name": "bike-stores-bucket",
+      "use_async": true,
+      "database": "bikestores-csv",
+      "schemas": ["default"],
+      "tables": []
+    },
+    {
+      "type": "SQL Server",
+      "name": "adventure-works",
+      "display_name": "ADVENTURE-WORKS",
+      "server": "localhost",
+      "database": "adventureworks",
+      "username": "sa",
+      "password": "p0rry123",
+      "driver": "ODBC Driver 17 for SQL Server",
+      "schemas": ["dbo"],
+      "tables": []
+    },
+    {
+      "type": "SQL Server",
+      "name": "adventure-works-2019",
+      "display_name": "ADVENTURE-WORKS-2019",
+      "server": "localhost",
+      "database": "AdventureWorksDW2019",
+      "username": "sa",
+      "password": "p0rry123",
+      "driver": "ODBC Driver 17 for SQL Server",
+      "schemas": ["dbo"],
+      "tables": []
+    }
+  ]
+}
